@@ -218,7 +218,7 @@ p {
   body div#table-container table tr td {
     page-break-inside: avoid;
     page-break-after: auto;
-    padding: 7.5px;
+    padding: 7.25px;
   }
 
   thead {
@@ -227,10 +227,6 @@ p {
 
   tfoot {
     display: table-footer-group;
-  }
-
-  body div#table-container table, tr, td {
-    border: 1px solid black;
   }
 }
 
