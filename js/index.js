@@ -61,6 +61,10 @@ $('#sort-btn').on('click', function () {
 $('#print-btn').on('click', function () {
   javascript: window.print();
 });
+$('#pdf-btn').on('click', function () {
+  alert("Sort function is not working in PDF now.");
+  window.open('Word Skills Vocab List.pdf');
+});
 
 var sortTable = function sortTable() {
   var table = void 0,rows = void 0,switching = void 0,i = void 0,x = void 0,y = void 0,shouldSwitch = void 0;
@@ -98,12 +102,4 @@ var sortTable = function sortTable() {
       switching = true;
     }
   }
-
-
-
-
-
-
-
-
 };
