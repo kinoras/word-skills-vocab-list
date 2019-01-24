@@ -243,5 +243,7 @@ p {
   body div#table-container table tr td {
     padding: 7.5px;
   }
-  
+  td.word {
+    width: 40%;
+  }
 }
