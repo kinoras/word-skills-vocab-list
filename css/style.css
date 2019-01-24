@@ -246,4 +246,11 @@ p {
   td.word {
     width: 40%;
   }
+  .main-title{
+    margin-right: 0;
+  }
+  #file-picker{
+    margin-right: 0;
+    width: 100%;
+  }
 }
