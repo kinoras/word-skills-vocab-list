@@ -220,7 +220,11 @@ p {
     page-break-after: auto;
     padding: 3px;
   }
-
+  
+  td.word {
+    width: 10em;
+  }
+  
   thead {
     display: table-header-group;
   }
