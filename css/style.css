@@ -219,7 +219,7 @@ p {
   body div#table-container table tr td {
     page-break-inside: avoid;
     page-break-after: auto;
-    padding: 3px;
+    padding: 3.5px;
   }
   
   td.word {
