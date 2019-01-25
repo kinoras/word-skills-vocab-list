@@ -4,7 +4,7 @@ $(document).ready(function () {
   readFile(file);
 });
 
-var file = "https://cdn.filepicker.io/api/file/TWSwgM1GSxWYj3uzHUlS";
+var file = "https://kinoras.com/wp-content/uploads/2019/01/Peihsu.csv";
 var sny = 0;
 
 function readFile(file) {
