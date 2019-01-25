@@ -218,7 +218,7 @@ p {
   body div#table-container table tr td {
     page-break-inside: avoid;
     page-break-after: auto;
-    padding: 2px;
+    padding: 3px;
   }
 
   thead {
