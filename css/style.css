@@ -219,7 +219,7 @@ p {
     page-break-inside: avoid;
     page-break-after: auto;
     padding: 3px;
-    font-family: Times New Roman, selif;
+    font-family: 'Times New Roman';
   }
   
   td.word {
