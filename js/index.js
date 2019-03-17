@@ -4,7 +4,7 @@ $(document).ready(function () {
   readFile(file);
 });
 
-var file = "https://cdn.filepicker.io/api/file/TWSwgM1GSxWYj3uzHUlS";
+var file = "https://cdn.filepicker.io/api/file/C3fweeE9RcSU4JnIWzII";
 var sny = 0;
 
 function readFile(file) {
@@ -26,7 +26,7 @@ function readFile(file) {
       html += "<tr>";
 
       // split line into columns
-      var columns = ourrow.split('"",""');
+      var columns = ourrow.split(",");
 
       html += "<td class='word'>" + columns[0] + "</td>";
       html += "<td class='def'>" + columns[1] + "</td>";
