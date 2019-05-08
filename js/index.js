@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   readFile(file);
 });
@@ -28,16 +26,14 @@ function readFile(file) {
       // split line into columns
       var columns = ourrow.split(",");
 
-      html += "<td class='word'>" + columns[0] + "</td>";
-      html += "<td class='def'>" + columns[1] + "</td>";
+      html += "<td class='word' id='word-" + sny + "'><span id='first-letter-"+ sny +"'>" + columns[0].charAt(0) + "</span><span class='remain-letter' id='remain-letter-" +  sny + "'>" + columns[0].slice(1) + "</span></td>";
+      html += "<td class='def' id='def-" + sny + "'>" + columns[1] + "</td>";
+      html += "<td class='btn-box'><button class='btn' id='btn-" + sny + "'>SHOW ANSWER</button></td>";
       html += "<td class='hidden' id='num-" + sny + "'>" + Math.random() + "</td>";
 
       // close row
       html += "</tr>";
-
       sny++;
-
-
     });
 
     // console.log(sny);
@@ -56,18 +52,7 @@ function readFile(file) {
 }
 
 $('#sort-btn').on('click', function () {
-  sortTable();
-});
-$('#print-btn').on('click', function () {
-  javascript: window.print();
-});
-$('#pdf-btn').on('click', function () {
-  alert("Sort function is not working in PDF now.");
-  window.open('Word Skills Vocab List.pdf');
-});
-
-var sortTable = function sortTable() {
-  var table = void 0,rows = void 0,switching = void 0,i = void 0,x = void 0,y = void 0,shouldSwitch = void 0;
+   var table = void 0,rows = void 0,switching = void 0,i = void 0,x = void 0,y = void 0,shouldSwitch = void 0;
 
   for (i = 0; i < sny; i++) {
     $('#num-' + i).html(Math.random());
@@ -86,8 +71,8 @@ var sortTable = function sortTable() {
       shouldSwitch = false;
       /*Get the two elements you want to compare,
                             one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[2];
-      y = rows[i + 1].getElementsByTagName("TD")[2];
+      x = rows[i].getElementsByTagName("TD")[3];
+      y = rows[i + 1].getElementsByTagName("TD")[3];
       //check if the two rows should switch place:
       if (Number(x.innerHTML) > Number(y.innerHTML)) {
         //if so, mark as a switch and break the loop:
@@ -102,4 +87,33 @@ var sortTable = function sortTable() {
       switching = true;
     }
   }
-};
+});
+$('#print-btn').on('click', function () {
+   javascript: window.print();
+});
+$('body').on('click', function(e) {
+   var className = $(e.target).attr('class');
+   var idName = $(e.target).attr('id');
+   if ( className == "btn" ) {
+      var rowCode = idName.replace('btn-','');
+      $('#remain-letter-' + rowCode).toggleClass('hide');
+      if ( $('#'+idName).html() == "SHOW ANSWER" ) {
+         $('#'+idName).html("HIDE ANSWER");
+      } else {
+         $('#'+idName).html("SHOW ANSWER");
+      }
+   }
+   
+   if ( idName == "show-hide-ans-btn" ) {
+      if ( $("#show-hide-ans-btn").html() == "SHOW ALL ANSWER" ) {
+         $(".remain-letter").removeClass("hide");
+         $(".btn").html("HIDE ANSWER");
+         $("#show-hide-ans-btn").html("HIDE ALL ANSWER");
+      } else {
+         $(".remain-letter").addClass("hide");
+         $(".btn").html("SHOW ANSWER");
+         $("#show-hide-ans-btn").html("SHOW ALL ANSWER");
+      }
+   }
+   
+});
