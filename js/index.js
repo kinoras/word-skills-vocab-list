@@ -2,7 +2,7 @@ $(document).ready(function () {
   readFile(file);
 });
 
-var file = "https://cdn.filepicker.io/api/file/C3fweeE9RcSU4JnIWzII";
+var file = "https://cdn.filepicker.io/api/file/RUk8PEBSACVObcEii8gf";
 var sny = 0;
 
 function readFile(file) {
