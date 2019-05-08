@@ -189,7 +189,7 @@ a:hover {
   justify-content: center;
 }
 .buttons button {
-  margin: 0 10px;
+  margin: 10px;
 }
 
 p {
@@ -260,5 +260,9 @@ p {
   }
   .buttons {
    flex-direction: column;
+   }
+  
+  .buttons button {
+     width: 100%;
    }
 }
