@@ -26,7 +26,7 @@ function readFile(file) {
       // split line into columns
       var columns = ourrow.split(",");
 
-      html += "<td class='word' id='word-" + sny + "'><span id='first-letter-"+ sny +"'>" + columns[0].charAt(0) + "</span><span class='remain-letter' id='remain-letter-" +  sny + "'>" + columns[0].slice(1) + "</span></td>";
+      html += "<td class='word' id='word-" + sny + "'><span id='first-letter-"+ sny +"'>" + columns[0].charAt(0) + "</span><span class='remain-letter hidden' id='remain-letter-" +  sny + "'>" + columns[0].slice(1) + "</span></td>";
       html += "<td class='def' id='def-" + sny + "'>" + columns[1] + "</td>";
       html += "<td class='btn-box'><button class='btn' id='btn-" + sny + "'>SHOW ANSWER</button></td>";
       html += "<td class='hidden' id='num-" + sny + "'>" + Math.random() + "</td>";
