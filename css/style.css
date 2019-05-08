@@ -157,6 +157,13 @@ button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, in
   padding: 0.3em 1em;
   width: 100%;
 }
+
+.hide{
+   display: none;
+}
+
+
+
 @media screen and (min-width: 40em) {
   #tables tbody td button {
     margin-bottom: 0;
@@ -226,13 +233,14 @@ p {
     width: 10em;
   }
   
-  thead {
+  thead,tfoot {
     display: table-header-group;
   }
 
-  tfoot {
-    display: table-footer-group;
-  }
+   
+   .btn-box, .remain-letter{
+      display: none;
+   }
 }
 
 @media screen and (max-width: 450px) {
