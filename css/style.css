@@ -28,14 +28,13 @@ html {
 }
 
 #file-picker {
-  max-width: 1200px;
+/*   max-width: 1200px; */
   margin-left: auto;
   margin-right: auto;
   float: left;
-  display: block;
-  margin-right: 2.3576520234%;
-  width: 48.8211739883%;
-  margin-left: 25.5894130058%;
+  display: flex;
+   flex-direction: column;
+   width: 100%;
 }
 #file-picker::after {
   clear: both;
