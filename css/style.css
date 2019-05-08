@@ -195,7 +195,7 @@ p {
   text-align: center;
 }
 
-.btn{
+#tables tbody td button.btn{
   width: 1em;
 }
 
