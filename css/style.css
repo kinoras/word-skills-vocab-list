@@ -195,6 +195,10 @@ p {
   text-align: center;
 }
 
+.btn{
+  width: 1em;
+}
+
 @media print {
   body div.buttons {
     display: none;
