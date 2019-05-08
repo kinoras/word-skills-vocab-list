@@ -158,10 +158,6 @@ button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, in
   width: 100%;
 }
 
-.hideen{
-   display: none;
-}
-
 
 
 @media screen and (min-width: 40em) {
@@ -171,7 +167,7 @@ button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, in
   }
 }
 
-td.hidden {
+.hidden {
   display: none;
 }
 
