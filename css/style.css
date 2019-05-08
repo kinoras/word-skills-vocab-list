@@ -196,7 +196,7 @@ p {
 }
 
 #tables tbody td button.btn{
-  width: 1em;
+  width: 1.5em;
 }
 
 @media print {
