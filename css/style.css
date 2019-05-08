@@ -258,4 +258,7 @@ p {
     margin-right: 0;
 /*     width: 100%; */
   }
+  #show-hide-ans-btn{
+      display: block;
+   }
 }
