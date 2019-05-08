@@ -107,11 +107,11 @@ $('body').on('click', function(e) {
    if ( idName == "show-hide-ans-btn" ) {
       if ( $("#show-hide-ans-btn").html() == "SHOW ALL ANSWERS" ) {
          $(".remain-letter").removeClass("hidden");
-         $(".btn").html("HIDE ANSWER");
+         $(".btn").html("H");
          $("#show-hide-ans-btn").html("HIDE ALL ANSWERS");
       } else {
          $(".remain-letter").addClass("hidden");
-         $(".btn").html("SHOW ANSWER");
+         $(".btn").html("S");
          $("#show-hide-ans-btn").html("SHOW ALL ANSWERS");
       }
    }
