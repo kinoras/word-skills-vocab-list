@@ -158,7 +158,7 @@ button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, in
   width: 100%;
 }
 
-.hide{
+.hideen{
    display: none;
 }
 
