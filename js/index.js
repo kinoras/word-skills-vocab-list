@@ -96,7 +96,7 @@ $('body').on('click', function(e) {
    var idName = $(e.target).attr('id');
    if ( className == "btn" ) {
       var rowCode = idName.replace('btn-','');
-      $('#remain-letter-' + rowCode).toggleClass('hide');
+      $('#remain-letter-' + rowCode).toggleClass('hidden');
       if ( $('#'+idName).html() == "SHOW ANSWER" ) {
          $('#'+idName).html("HIDE ANSWER");
       } else {
@@ -106,11 +106,11 @@ $('body').on('click', function(e) {
    
    if ( idName == "show-hide-ans-btn" ) {
       if ( $("#show-hide-ans-btn").html() == "SHOW ALL ANSWER" ) {
-         $(".remain-letter").removeClass("hide");
+         $(".remain-letter").removeClass("hidden");
          $(".btn").html("HIDE ANSWER");
          $("#show-hide-ans-btn").html("HIDE ALL ANSWER");
       } else {
-         $(".remain-letter").addClass("hide");
+         $(".remain-letter").addClass("hidden");
          $(".btn").html("SHOW ANSWER");
          $("#show-hide-ans-btn").html("SHOW ALL ANSWER");
       }
