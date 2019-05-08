@@ -28,7 +28,7 @@ function readFile(file) {
 
       html += "<td class='word' id='word-" + sny + "'><span id='first-letter-"+ sny +"'>" + columns[0].charAt(0) + "</span><span class='remain-letter hidden' id='remain-letter-" +  sny + "'>" + columns[0].slice(1) + "</span></td>";
       html += "<td class='def' id='def-" + sny + "'>" + columns[1] + "</td>";
-      html += "<td class='btn-box'><button class='btn' id='btn-" + sny + "'>SHOW ANSWER</button></td>";
+      html += "<td class='btn-box'><button class='btn' id='btn-" + sny + "'>S</button></td>";
       html += "<td class='hidden' id='num-" + sny + "'>" + Math.random() + "</td>";
 
       // close row
@@ -97,22 +97,22 @@ $('body').on('click', function(e) {
    if ( className == "btn" ) {
       var rowCode = idName.replace('btn-','');
       $('#remain-letter-' + rowCode).toggleClass('hidden');
-      if ( $('#'+idName).html() == "SHOW ANSWER" ) {
-         $('#'+idName).html("HIDE ANSWER");
+      if ( $('#'+idName).html() == "S" ) {
+         $('#'+idName).html("H");
       } else {
-         $('#'+idName).html("SHOW ANSWER");
+         $('#'+idName).html("S");
       }
    }
    
    if ( idName == "show-hide-ans-btn" ) {
-      if ( $("#show-hide-ans-btn").html() == "SHOW ALL ANSWER" ) {
+      if ( $("#show-hide-ans-btn").html() == "SHOW ALL ANSWERS" ) {
          $(".remain-letter").removeClass("hidden");
          $(".btn").html("HIDE ANSWER");
-         $("#show-hide-ans-btn").html("HIDE ALL ANSWER");
+         $("#show-hide-ans-btn").html("HIDE ALL ANSWERS");
       } else {
          $(".remain-letter").addClass("hidden");
          $(".btn").html("SHOW ANSWER");
-         $("#show-hide-ans-btn").html("SHOW ALL ANSWER");
+         $("#show-hide-ans-btn").html("SHOW ALL ANSWERS");
       }
    }
    
