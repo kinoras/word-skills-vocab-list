@@ -5,14 +5,13 @@ $(document).ready(function () {
 var file = "https://cdn.filepicker.io/api/file/B6Jp2qBaQKK8H53oIfFO";
 var coverage = "Unit 70, 71, 72A, 74";
 var sny = 0;
-
+$("#file-picker p").append("<p>Coverage: "+ coverage +"</p>");
 function readFile(file) {
   /*Blob from a previous pick, etc.*/
   $.get(file, function (data) {
     // console.log(data);
     // start the table
-    var html = "<p>Coverage: "+ coverage +"</p>" ;
-    var html+ = "<table id='tables'>";
+    var html = "<table id='tables'>";
 
     // split into lines
     var rows = data.split("\n");
