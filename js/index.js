@@ -11,7 +11,8 @@ function readFile(file) {
   $.get(file, function (data) {
     // console.log(data);
     // start the table
-    var html = "<table id='tables'>";
+    var html = "<p>Coverage: "+ coverage +"</p>" ;
+    var html+ = "<table id='tables'>";
 
     // split into lines
     var rows = data.split("\n");
