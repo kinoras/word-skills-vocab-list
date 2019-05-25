@@ -5,7 +5,7 @@ $(document).ready(function () {
 var file = "https://cdn.filepicker.io/api/file/B6Jp2qBaQKK8H53oIfFO";
 var coverage = "Unit 70, 71, 72A, 74";
 var sny = 0;
-$("#file-picker p").append("<br>Coverage: "+ coverage);
+$("#file-picker").append("<p>Coverage: "+ coverage + "</p>");
 function readFile(file) {
   /*Blob from a previous pick, etc.*/
   $.get(file, function (data) {
