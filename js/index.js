@@ -2,7 +2,7 @@ $(document).ready(function () {
   readFile(file);
 });
 
-var file = "https://cdn.filepicker.io/api/file/Pn5grXiToqueOAZbUjEz";
+var file = "https://cdn.filepicker.io/api/file/0dBP2kDERJewSZwRFata";
 var coverage = "Unit 70, 71, 72A, 74";
 var sny = 0;
 $("#file-picker").append("<p>Coverage: "+ coverage + "</p>");
