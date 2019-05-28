@@ -200,7 +200,7 @@ p {
 }
 
 @media print {
-  body div.buttons {
+  body #file-picker {
     display: none;
   }
 
