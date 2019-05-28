@@ -199,6 +199,11 @@ p {
   width: 3em;
 }
 
+
+
+
+
+
 @media print {
   body #file-picker {
     display: none;
@@ -212,7 +217,7 @@ p {
 
   * {
     font-family:'Times New Roman' !important;
-/*     font-size: 1.1em; */
+    font-size: .9em;
   }
 
   body div#table-container table {
@@ -241,6 +246,11 @@ p {
       display: none;
    }
 }
+
+
+
+
+
 
 @media screen and (max-width: 450px) {
    body div#table-container {
