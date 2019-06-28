@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 var file = "https://cdn.filepicker.io/api/file/gYD3lIqfSk6SzSsy4jyc";
-var coverage = "Unit 70, 71, 72A, 74";
+var coverage = "Unit 40, 77, 78, 80";
 var sny = 0;
 $("#file-picker").append("<p>Coverage: "+ coverage + "</p>");
 function readFile(file) {
