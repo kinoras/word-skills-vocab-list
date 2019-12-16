@@ -2,7 +2,7 @@ $(document).ready(function () {
   readFile(file);
 });
 
-var file = "https://cdn.filepicker.io/api/file/gYD3lIqfSk6SzSsy4jyc";
+var file = "https://wordskills.kinoras.com/list.csv";
 var coverage = "Unit 40, 77, 78, 80";
 var sny = 0;
 $("#file-picker").append("<p>Coverage: "+ coverage + "</p>");
