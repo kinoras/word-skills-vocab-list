@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 var file = "https://wordskills.kinoras.com/list.csv";
-var coverage = "Unit 40, 77, 78, 80";
+var coverage = "Advanced Unit 27 - 29";
 var sny = 0;
 $("#file-picker").append("<p>Coverage: "+ coverage + "</p>");
 function readFile(file) {
