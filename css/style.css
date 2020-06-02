@@ -279,3 +279,24 @@ p {
      /*  width: 100%;  */
    }
 }
+
+@media screen and (max-width: 960px) {
+  body div#table-container {
+   width: 90%;
+   margin:  0 5%;
+   max-width: 90vw;
+ }
+ body div#table-container table tr td {
+   padding: 7.5px;
+ }
+ td.word {
+   width: 25%;
+ }
+ .main-title{
+   margin-right: 0;
+ }
+ #file-picker{
+   margin-right: 0;
+/*     width: 100%; */
+ }
+}

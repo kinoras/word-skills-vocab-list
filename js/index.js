@@ -2,8 +2,8 @@ $(document).ready(function () {
   readFile(file);
 });
 
-var file = "https://wordskills.kinoras.com/list.csv";
-var coverage = "Advanced Unit 27 - 29";
+var file = "/list.csv";
+var coverage = "Advanced Unit 49 - 51";
 var sny = 0;
 $("#file-picker").append("<p>Coverage: "+ coverage + "</p>");
 function readFile(file) {
